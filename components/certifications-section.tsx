@@ -1,3 +1,5 @@
+"use client"
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -14,17 +16,21 @@ export function CertificationsSection() {
         "Comprehensive course covering network protocols, TCP/IP, routing, and network security fundamentals.",
       logo: "/coursera-logo-blue.jpg",
       skills: ["Network Protocols", "TCP/IP", "Routing", "Network Security"],
-      credentialId: "COURSERA-NET-2024",
+      credentialId: "J5E2I2XGW5JG",
+      verificationUrl: "https://www.coursera.org/account/accomplishments/verify/J5E2I2XGW5JG",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1XapJooUIktcCidIBBItqjr7NWAddq_1y",
     },
     {
       title: "Introduction to Hardware and Operating Systems",
-      provider: "IBM",
+      provider: "Coursera",
       year: "2024",
       description:
         "Foundational knowledge of computer hardware components, operating system concepts, and system administration.",
-      logo: "/ibm-logo-blue.jpg",
+      logo: "/coursera-logo-blue.jpg",
       skills: ["Hardware Architecture", "Operating Systems", "System Administration", "Troubleshooting"],
-      credentialId: "IBM-HW-OS-2024",
+      credentialId: "N1WDOLIRALB8",
+      verificationUrl: "https://www.coursera.org/account/accomplishments/verify/N1WDOLIRALB8",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1BaM7xrJTRbWwiIHZGMzx4vJzpaa2rIfX",
     },
     {
       title: "OCI AI Foundations Associate",
@@ -35,8 +41,23 @@ export function CertificationsSection() {
       logo: "/oracle-logo-red.jpg",
       skills: ["Cloud AI", "Machine Learning", "OCI Services", "AI Solutions"],
       credentialId: "OCI-AI-FOUND-2025",
+      verificationUrl:
+        "https://catalog-education.oracle.com/pls/certview/sharebadge?id=407A0AAF64E24118DE02F66032D97069573383911575314A0DBFD8CA3785A8DB",
+      downloadUrl: "https://drive.google.com/uc?export=download&id=1KM3HwL7onScvhQbmmuB2EG2j-H6q0yyD",
     },
   ]
+
+  const handleDownload = (downloadUrl: string, title: string) => {
+    if (downloadUrl) {
+      const link = document.createElement("a")
+      link.href = downloadUrl
+      link.download = `${title.replace(/\s+/g, "_")}_Certificate.pdf`
+      link.target = "_blank"
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  }
 
   return (
     <section id="certifications" className="py-20">
@@ -95,11 +116,28 @@ export function CertificationsSection() {
                   <p className="text-xs text-muted-foreground">Credential ID: {cert.credentialId}</p>
 
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" className="flex-1 bg-transparent">
-                      <ExternalLink className="w-3 h-3 mr-2" />
-                      Verify
-                    </Button>
-                    <Button size="sm" className="flex-1">
+                    {cert.verificationUrl ? (
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex-1 bg-transparent"
+                        onClick={() => window.open(cert.verificationUrl, "_blank")}
+                      >
+                        <ExternalLink className="w-3 h-3 mr-2" />
+                        Verify
+                      </Button>
+                    ) : (
+                      <Button size="sm" variant="outline" className="flex-1 bg-transparent">
+                        <ExternalLink className="w-3 h-3 mr-2" />
+                        Verify
+                      </Button>
+                    )}
+                    <Button
+                      size="sm"
+                      className="flex-1"
+                      onClick={() => (cert.downloadUrl ? handleDownload(cert.downloadUrl, cert.title) : undefined)}
+                      disabled={!cert.downloadUrl}
+                    >
                       <Download className="w-3 h-3 mr-2" />
                       Download
                     </Button>
