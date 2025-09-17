@@ -40,7 +40,7 @@ export function CertificationsSection() {
         "Oracle Cloud Infrastructure AI services, machine learning fundamentals, and cloud-based AI solutions.",
       logo: "/oracle-logo-red.jpg",
       skills: ["Cloud AI", "Machine Learning", "OCI Services", "AI Solutions"],
-      credentialId: "OCI-AI-FOUND-2025",
+      credentialId: "102592317OCI25AICFA",
       verificationUrl:
         "https://catalog-education.oracle.com/pls/certview/sharebadge?id=407A0AAF64E24118DE02F66032D97069573383911575314A0DBFD8CA3785A8DB",
       downloadUrl: "https://drive.google.com/uc?export=download&id=1KM3HwL7onScvhQbmmuB2EG2j-H6q0yyD",
