@@ -13,8 +13,7 @@ The site is responsive and styled using Tailwind CSS.
 ---
 ## Features
 
-- Responsive design  
-- Dark/light theme support  
+- Responsive design   
 - Clean UI & smooth transitions  
 - Project showcase  
 - Contact form (or contact details)  
