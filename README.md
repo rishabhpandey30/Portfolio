@@ -11,7 +11,16 @@ The site is responsive and styled using Tailwind CSS.
 [portfolio-kappa-rust-68.vercel.app](https://rishabhpandey-portfolio-web.vercel.app/)
 
 ---
+## Features
 
+- Responsive design  
+- Dark/light theme support  
+- Clean UI & smooth transitions  
+- Project showcase  
+- Contact form (or contact details)  
+- SEO optimized
+
+---
 ## 📂 Tech Stack
 
 - **Framework**: Next.js  
@@ -49,7 +58,6 @@ To run the site locally:
    cd Portfolio
 Install dependencies
 ```
-Copy code
 npm install
 Start development server
 
