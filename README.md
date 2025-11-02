@@ -63,8 +63,3 @@ Start development server
 npm run dev
 Visit http://localhost:3000 in your browser to view the site.
 ```
-🛠 Scripts
-Script	Description
-dev	Run the development server
-build	Produce a production build
-start	Run the production build locally
