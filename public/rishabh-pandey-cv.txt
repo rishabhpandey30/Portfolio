@@ -1,0 +1,56 @@
+RISHABH PANDEY 
+Aspiring Software Developer 
+rishabhpandey3011@gmail.com | GitHub | LinkedIn | 8864902606 
+
+SUMMARY 
+
+Highly motivated MERN Developer skilled in building scalable full-stack applications using React and 
+Nodejs. Passionate about building effective, user-friendly solutions and continuously expanding skills in 
+Data Science and Machine Learning. Quick learner with strong problem-solving and debugging skills. 
+
+PROFESSIONAL SKILLS  
+TECHNICAL SKILLS  
+Design Understanding 
+Team Collaboration 
+Problem Solving  
+
+C/C++, Python, Java, React, HTML, CSS, 
+JavaScript, MySQL, REST APIs, Git, MS Excel, 
+Tableau
+
+PROJECTS 
+
+Secure File Management System                                                                                   April 2025 
+Created a file storage system with secure user login  
+Enabled file upload, download, delete and share. 
+Integrated Two-Factor authentication using OTP via email 
+
+YouTube Trending Video Prediction                                                                               Dec 2024  
+Analyze and predict YouTube videos Trend. 
+Performed in-depth data analysis and visualization                                       
+Built and evaluated supervised learning models to predict video trending potential 
+
+AI Workout Planner                                                                                              Feb 2025 
+Developed an interactive fitness chatbot using React and Gemini API                                      
+Delivers the personalized workout plans based on user need 
+Integrated dynamic UI components and handles real-time user inputs
+
+EDUCATION 
+
+Bachelor of Technology in Computer Science 
+Lovely Professional University, Punjab, India, CGPA: 8.47                              2023-2027   
+Active participant in technical clubs and coding contests. 
+
+CBSE (Class XII)                                                                                            2022-2023 
+ST. Joseph Sr. Sec. School, India, Percentage: 83.40% 
+
+ADDITIONAL INFORMATION 
+
+Languages: English, Hindi 
+Responsibility: Worked with NGO (NSRDS) and helped in vocational training 
+
+Certifications & Awards 
+NPTEL Cloud Computing   
+The Bits and Bytes of CN 
+Data Analytics Job Simulation  
+C++ Programming Coursera
