@@ -119,7 +119,7 @@ export function AboutSection() {
 
             {/* Mini stats */}
             <motion.div variants={itemVariants} className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
-              <AnimatedCounter value="8+" label="Projects" />
+              <AnimatedCounter value="5+" label="Projects" />
               <AnimatedCounter value="6+" label="Certs" />
               <AnimatedCounter value="2+" label="Years" />
               <AnimatedCounter value="∞" label="Curiosity" />
