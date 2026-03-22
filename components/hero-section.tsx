@@ -291,7 +291,7 @@ export function HeroSection() {
           className="mt-20 flex flex-wrap justify-center gap-8 sm:gap-16"
         >
           {[
-            { value: "8+", label: "Projects Built" },
+            { value: "5+", label: "Projects Built" },
             { value: "6+", label: "Certifications" },
             { value: "2+", label: "Years Coding" },
             { value: "MERN", label: "Primary Stack" },

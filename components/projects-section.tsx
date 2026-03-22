@@ -52,17 +52,7 @@ const projects = [
     githubUrl: "https://github.com/rishabhpandey30/Uber_Dashboard",
     featured: false,
   },
-  {
-    title: "Secure File Management System",
-    description:
-      "A comprehensive secure file storage platform featuring Two-Factor Authentication, encrypted file storage, and user access controls with scalable architecture.",
-    image: "/secure-file-management-dashboard-interface.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "JWT", "Encryption"],
-    date: "April 2025",
-    highlights: ["Two-Factor Authentication", "End-to-end Encryption", "Role-based Access Control"],
-    githubUrl: "https://github.com/rishabhpandey30/os",
-    featured: false,
-  },
+  
   {
     title: "YouTube Trending Video Prediction",
     description:
@@ -85,17 +75,7 @@ const projects = [
     githubUrl: "https://github.com/rishabhpandey30/Daily-Habit-Tracker",
     featured: false,
   },
-  {
-    title: "AI Workout Planner",
-    description:
-      "Intelligent fitness chatbot powered by Gemini API creating personalized workout plans with conversational AI and adaptive recommendations.",
-    image: "/ai-fitness-app-interface-with-workout-plans.jpg",
-    technologies: ["React", "Gemini API", "Node.js", "AI/ML"],
-    date: "March 2025",
-    highlights: ["AI-Powered Recommendations", "Personalized Plans", "Conversational Interface"],
-    githubUrl: "https://github.com/rishabhpandey30/workout_Planner",
-    featured: false,
-  },
+
   {
     title: "Nestlé Sales Dashboard",
     description:
