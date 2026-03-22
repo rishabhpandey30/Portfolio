@@ -8,7 +8,7 @@ The site is responsive and styled using Tailwind CSS.
 
 ## 🔗 Live Demo
 
-[My Portfolio](https://rishabhpandey-portfolio-web.vercel.app/)
+[My Portfolio](https://rishabhpandey.vercel.app/)
 
 ---
 ## Features
