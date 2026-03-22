@@ -50,6 +50,16 @@ export function ProjectsSection() {
       ],
     },
     {
+      title: "Secure File Management System",
+      description:
+        "A comprehensive secure file storage platform featuring Two-Factor Authentication, encrypted file storage, and user access controls. Built with modern security practices and scalable architecture.",
+      image: "/secure-file-management-dashboard-interface.jpg",
+      technologies: ["React", "Node.js", "MongoDB", "JWT", "Encryption"],
+      date: "April 2025",
+      highlights: ["Two-Factor Authentication", "End-to-end Encryption", "Role-based Access Control"],
+      githubUrl: "https://github.com/rishabhpandey30/os",
+    },
+    {
       title: "YouTube Trending Video Prediction",
       description:
         "Machine Learning-powered dashboard that analyzes and predicts YouTube video trends using advanced algorithms. Features data visualization and predictive analytics for content creators.",
