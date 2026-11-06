@@ -108,7 +108,7 @@ export function HeroSection() {
 
   const downloadCV = () => {
     const link = document.createElement("a")
-    link.href = "https://drive.google.com/file/d/1gccwCSqIzdwqmurkTXY_wRABo_Rcs_p1/view?usp=drive_link"
+    link.href = "https://drive.google.com/file/d/1CCw2h6XiOniiY7DOXzMx-AhQxdhS81dw/view?usp=sharing"
     link.download = "Rishabh_Pandey_CV.pdf"
     link.target = "_blank"
     document.body.appendChild(link)
