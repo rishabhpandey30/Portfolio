@@ -424,3 +424,46 @@
   -webkit-backdrop-filter: blur(24px);
   border-bottom: 1px solid oklch(0.118 0.008 60 / 0.10);
 }
+
+/* ============================================================
+   CUSTOM CURSOR — Nova Workspace difference pointer
+   ============================================================ */
+.custom-cursor {
+  display: none;
+}
+
+@media (pointer: fine) {
+  .custom-cursor {
+    display: block;
+    pointer-events: none;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+                height 0.18s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: left, top, width, height;
+  }
+
+  .custom-cursor.expand {
+    width: 44px;
+    height: 44px;
+    opacity: 0.85;
+  }
+
+  body, a, button, [role="button"], input[type="submit"] {
+    cursor: none !important;
+  }
+
+  input:not([type="submit"]):not([type="button"]), textarea {
+    cursor: text !important;
+  }
+}
+
