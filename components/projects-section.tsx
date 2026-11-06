@@ -102,11 +102,11 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
       transition={{ duration: 0.6, delay: index * 0.08 }}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
-      className="group relative glass-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_15px_40px_rgba(124,58,237,0.3)] flex flex-col"
+      className="group relative glass-card rounded-2xl overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_15px_40px_rgba(200,169,126,0.2)] flex flex-col"
     >
       {/* Featured badge */}
       {project.featured && (
-        <div className="absolute top-3 left-3 z-20 px-2.5 py-1 rounded-full text-[10px] font-bold bg-primary/90 text-white uppercase tracking-wider">
+        <div className="absolute top-3 left-3 z-20 px-2.5 py-1 rounded-full text-[10px] font-bold bg-primary text-primary-foreground uppercase tracking-wider">
           Featured
         </div>
       )}

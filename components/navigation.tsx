@@ -50,7 +50,7 @@ export function Navigation() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "nav-glass shadow-lg shadow-black/20" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "nav-glass shadow-sm shadow-black/5" : "bg-transparent"
         }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,7 +77,7 @@ export function Navigation() {
                 className="relative px-4 py-2 text-sm font-medium rounded-lg transition-colors duration-200 group"
               >
                 <span
-                  className={`relative z-10 transition-colors ${activeSection === item.id ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                  className={`relative z-10 transition-colors ${activeSection === item.id ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                     }`}
                 >
                   {item.label}
@@ -92,13 +92,13 @@ export function Navigation() {
               </button>
             ))}
 
-            {/* CTA */}
+            {/* CTA — Nova style: dark fill, light text */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("contact")}
-              className="ml-3 px-5 py-2 rounded-xl text-sm font-bold text-white transition-all duration-200 hover:shadow-[0_0_20px_theme(colors.primary/40%)]"
-              style={{ background: "linear-gradient(135deg, oklch(0.55 0.26 264), oklch(0.6 0.25 300))" }}
+              className="ml-3 px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 hover:opacity-80"
+              style={{ background: "#181614", color: "#f4f1ec", border: "1.5px solid #181614" }}
             >
               Hire Me
             </motion.button>
@@ -145,7 +145,7 @@ export function Navigation() {
                   transition={{ delay: index * 0.05 }}
                   onClick={() => scrollToSection(item.id)}
                   className={`block w-full text-left px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 ${activeSection === item.id
-                      ? "bg-primary/15 text-primary border border-primary/30"
+                      ? "bg-primary/15 text-foreground border border-primary/30"
                       : "text-muted-foreground hover:text-foreground hover:bg-muted"
                     }`}
                 >
@@ -155,8 +155,8 @@ export function Navigation() {
               <div className="pt-2">
                 <button
                   onClick={() => scrollToSection("contact")}
-                  className="w-full py-2.5 rounded-xl text-sm font-bold text-white"
-                  style={{ background: "linear-gradient(135deg, oklch(0.55 0.26 264), oklch(0.6 0.25 300))" }}
+                  className="w-full py-2.5 rounded-full text-sm font-semibold"
+                  style={{ background: "#181614", color: "#f4f1ec" }}
                 >
                   Hire Me
                 </button>

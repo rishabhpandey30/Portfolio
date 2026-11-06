@@ -213,8 +213,8 @@ export function ContactSection() {
                   whileTap={{ scale: 0.98 }}
                   type="submit"
                   disabled={loading}
-                  className="w-full py-3 rounded-xl font-semibold text-sm text-white flex items-center justify-center gap-2 transition-all duration-200 disabled:opacity-60"
-                  style={{ background: "linear-gradient(135deg, oklch(0.55 0.26 264), oklch(0.6 0.25 300))" }}
+                  className="w-full py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2 transition-all duration-200 disabled:opacity-60"
+                  style={{ background: "#181614", color: "#f4f1ec", border: "1.5px solid #181614" }}
                 >
                   {loading ? (
                     <>

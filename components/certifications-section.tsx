@@ -152,7 +152,7 @@ export function CertificationsSection() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ y: -6 }}
-              className="group flex flex-col rounded-3xl overflow-hidden glass-card border border-border/50 hover:border-border hover:shadow-[0_0_40px_rgba(124,58,237,0.08)] transition-all duration-500"
+              className="group flex flex-col rounded-3xl overflow-hidden glass-card border border-border hover:border-primary/40 hover:shadow-[0_0_40px_rgba(200,169,126,0.12)] transition-all duration-500"
             >
               {/* Image Header wrapper */}
               <div className="relative aspect-[1.4] w-full bg-muted/20 overflow-hidden border-b border-border/40">

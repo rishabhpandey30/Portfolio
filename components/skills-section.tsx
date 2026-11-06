@@ -27,9 +27,9 @@ const SI = (slug: string, hex = "888888") =>
 const skillCategories: Category[] = [
   {
     title: "Languages",
-    titleColor: "text-yellow-400",
+    titleColor: "text-amber-700",
     cardClass:
-      "bg-gradient-to-br from-yellow-950/50 via-amber-950/30 to-card border border-yellow-500/20",
+      "bg-gradient-to-br from-amber-50 via-yellow-50/80 to-card border border-amber-200/60",
     skills: [
       { name: "Java",       icon: DI("java") },
       { name: "Python",     icon: DI("python") },
@@ -40,34 +40,34 @@ const skillCategories: Category[] = [
   },
   {
     title: "Frontend & UI",
-    titleColor: "text-cyan-400",
+    titleColor: "text-stone-600",
     cardClass:
-      "bg-gradient-to-br from-cyan-950/50 via-sky-950/30 to-card border border-cyan-500/20",
+      "bg-gradient-to-br from-stone-100 via-stone-50/80 to-card border border-stone-200/60",
     skills: [
       { name: "React",    icon: DI("react") },
-      { name: "Next.js",  icon: SI("nextdotjs", "FFFFFF") },
+      { name: "Next.js",  icon: DI("nextjs", "original") },
       { name: "HTML5",    icon: DI("html5") },
       { name: "CSS3",     icon: DI("css3") },
-      { name: "Tailwind", icon: SI("tailwindcss", "06B6D4") },
+      { name: "Tailwind", icon: SI("tailwindcss", "0EA5E9") },
     ],
   },
   {
     title: "Backend & Database",
-    titleColor: "text-green-400",
+    titleColor: "text-green-700",
     cardClass:
-      "bg-gradient-to-br from-green-950/50 via-emerald-950/30 to-card border border-green-500/20",
+      "bg-gradient-to-br from-green-50 via-emerald-50/80 to-card border border-green-200/60",
     skills: [
       { name: "Node.js",   icon: DI("nodejs") },
-      { name: "Express",   icon: SI("express", "FFFFFF") },
+      { name: "Express",   icon: SI("express", "000000") },
       { name: "MongoDB",   icon: DI("mongodb") },
       { name: "MySQL",     icon: DI("mysql") },
     ],
   },
   {
     title: "Data & Analytics",
-    titleColor: "text-purple-400",
+    titleColor: "text-primary",
     cardClass:
-      "bg-gradient-to-br from-purple-950/50 via-violet-950/30 to-card border border-purple-500/20",
+      "bg-gradient-to-br from-amber-50/80 via-orange-50/60 to-card border border-amber-200/40",
     skills: [
       { name: "Pandas",     icon: DI("pandas") },
       { name: "NumPy",      icon: DI("numpy") },
@@ -90,7 +90,7 @@ function SkillIcon({ skill, delay }: { skill: Skill; delay: number }) {
       className="flex flex-col items-center gap-3 cursor-default group"
     >
       {/* Icon tile */}
-      <div className="w-16 h-16 rounded-2xl bg-black/40 border border-white/10 flex items-center justify-center shadow-lg group-hover:border-white/40 group-hover:bg-white/10 group-hover:shadow-[0_0_20px_rgba(124,58,237,0.3)] group-hover:-rotate-3 transition-all duration-300">
+      <div className="w-16 h-16 rounded-2xl bg-white/70 border border-border flex items-center justify-center shadow-sm group-hover:border-primary/40 group-hover:bg-white group-hover:shadow-[0_0_16px_rgba(200,169,126,0.25)] group-hover:-rotate-3 transition-all duration-300">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={skill.icon}
@@ -106,7 +106,7 @@ function SkillIcon({ skill, delay }: { skill: Skill; delay: number }) {
           }}
         />
         <span
-          className="hidden w-full h-full items-center justify-center text-xs font-black text-white/50"
+          className="hidden w-full h-full items-center justify-center text-xs font-black text-foreground/40"
           aria-hidden
         >
           {initials}
@@ -114,7 +114,7 @@ function SkillIcon({ skill, delay }: { skill: Skill; delay: number }) {
       </div>
 
       {/* Label */}
-      <span className="text-[10px] font-bold uppercase tracking-widest text-white/50 group-hover:text-white/90 transition-colors text-center leading-tight max-w-[68px]">
+      <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground transition-colors text-center leading-tight max-w-[68px]">
         {skill.name}
       </span>
     </motion.div>
@@ -129,9 +129,9 @@ export function SkillsSection() {
     <section ref={ref} id="skills" className="py-28 relative overflow-hidden bg-muted/5">
       {/* Dot-grid background */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-[0.025]"
+        className="absolute inset-0 pointer-events-none opacity-[0.04]"
         style={{
-          backgroundImage: "radial-gradient(oklch(0.97 0 0) 1px, transparent 1px)",
+          backgroundImage: "radial-gradient(oklch(0.118 0.008 60) 1px, transparent 1px)",
           backgroundSize: "28px 28px",
         }}
       />
@@ -164,13 +164,13 @@ export function SkillsSection() {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.55, delay: catIdx * 0.1 }}
-              className={`relative rounded-2xl px-8 py-8 ${cat.cardClass} backdrop-blur-sm overflow-hidden group hover:scale-[1.015] transition-transform duration-300 min-h-[210px]`}
+              className={`relative rounded-2xl px-8 py-8 ${cat.cardClass} backdrop-blur-sm overflow-hidden group hover:scale-[1.015] transition-transform duration-300 min-h-[210px] hover:shadow-[0_4px_24px_rgba(200,169,126,0.15)]`}
             >
               {/* Top edge highlight on hover */}
               <div
                 className="absolute inset-x-0 top-0 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                 style={{
-                  background: "linear-gradient(90deg, transparent, oklch(0.97 0 0 / 0.14), transparent)",
+                  background: "linear-gradient(90deg, transparent, rgba(200,169,126,0.35), transparent)",
                 }}
               />
 

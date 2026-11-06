@@ -9,29 +9,29 @@ const highlights = [
     icon: Code,
     title: "Full-Stack Development",
     description: "MERN stack expertise with React and Node.js",
-    color: "from-blue-500/20 to-primary/20",
-    iconColor: "text-blue-400",
+    color: "from-amber-100/80 to-amber-50/60",
+    iconColor: "text-amber-700",
   },
   {
     icon: Brain,
     title: "AI & Machine Learning",
     description: "Exploring predictive models and data analysis",
-    color: "from-purple-500/20 to-secondary/20",
-    iconColor: "text-purple-400",
+    color: "from-stone-200/80 to-stone-100/60",
+    iconColor: "text-stone-600",
   },
   {
     icon: Database,
     title: "Data Visualization",
     description: "Creating insights through data storytelling",
-    color: "from-cyan-500/20 to-teal-500/20",
-    iconColor: "text-cyan-400",
+    color: "from-green-100/80 to-emerald-50/60",
+    iconColor: "text-green-700",
   },
   {
     icon: Users,
     title: "Social Impact",
     description: "Contributing to NGO skill development programs",
-    color: "from-emerald-500/20 to-green-500/20",
-    iconColor: "text-emerald-400",
+    color: "from-yellow-100/80 to-amber-50/60",
+    iconColor: "text-yellow-700",
   },
 ]
 
@@ -138,7 +138,7 @@ export function AboutSection() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.04, y: -4 }}
-                className="group relative p-5 rounded-2xl glass-card border border-border/50 overflow-hidden cursor-default transition-all duration-300 hover:border-primary/40 hover:shadow-[0_0_25px_rgba(124,58,237,0.15)]"
+                className="group relative p-5 rounded-2xl glass-card border border-border overflow-hidden cursor-default transition-all duration-300 hover:border-primary/50 hover:shadow-[0_4px_20px_rgba(200,169,126,0.15)]"
               >
                 {/* Background gradient on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${highlight.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />

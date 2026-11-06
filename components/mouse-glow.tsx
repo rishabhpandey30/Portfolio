@@ -45,7 +45,7 @@ export function MouseGlow() {
           x: mousePosition.x - 16,
           y: mousePosition.y - 16,
           scale: isHovering ? 1.5 : 1,
-          backgroundColor: isHovering ? "rgba(124, 58, 237, 0.1)" : "transparent",
+          backgroundColor: isHovering ? "rgba(200, 169, 126, 0.15)" : "transparent",
         }}
         transition={{ type: "spring", stiffness: 400, damping: 28, mass: 0.5 }}
       />

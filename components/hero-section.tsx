@@ -204,25 +204,24 @@ export function HeroSection() {
 
             {/* CTA Buttons */}
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              {/* Primary CTA — Nova style: dark fill */}
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.05, opacity: 0.88 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={scrollToProjects}
-                className="relative group px-8 py-3.5 rounded-xl font-semibold text-base overflow-hidden gradient-border text-white"
-                style={{ background: "linear-gradient(135deg, oklch(0.55 0.26 264), oklch(0.6 0.25 300))" }}
+                className="relative group px-8 py-3.5 rounded-full font-semibold text-base overflow-hidden flex items-center gap-2 transition-all duration-200"
+                style={{ background: "#181614", color: "#f4f1ec", border: "1.5px solid #181614" }}
               >
-                <span className="relative z-10 flex items-center gap-2">
-                  View My Work
-                  <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                View My Work
+                <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
               </motion.button>
 
+              {/* Secondary CTA — Nova ghost style */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
                 onClick={downloadCV}
-                className="px-8 py-3.5 rounded-xl font-semibold text-base glass-card flex items-center gap-2 justify-center border border-primary/30 text-primary hover:bg-primary/10 hover:border-primary/60 transition-all duration-300"
+                className="px-8 py-3.5 rounded-full font-semibold text-base flex items-center gap-2 justify-center border border-primary/40 text-primary hover:bg-primary/10 hover:border-primary/70 transition-all duration-300"
               >
                 <Download className="w-4 h-4" />
                 Download CV
